@@ -1,0 +1,325 @@
+p,h1{
+  margin: 16px 0px;
+}
+
+#navbar {
+    padding: 0px;
+    width: 100%;
+    background-color:
+        #003580;
+}
+
+#main {
+    height: 400px;
+    width: 100%;
+    background-color: #f2f2f2;
+
+}
+
+#p {
+    height: 45px;
+    width: 85%;
+    background-color: #fff0e0;
+    margin: auto;
+    border-radius: 2px;
+    padding: 5px;
+    /* margin-top: 30px; */
+    border: 1px solid red;
+}
+
+.child {
+    height: 19em;
+    width: 85%;
+    background-color: #f2f2f2;
+    
+
+    margin: auto;
+
+}
+.pinner{
+   font-size: 20px;
+}
+#lst{
+    height: 50px;
+    width: 85%;
+    background-color: #f2f2f2;
+ 
+
+    display: flex;
+    
+}
+#this label{
+    font-size: 15px;
+}
+#search{
+    display: flex;
+    background-color: orange;
+    padding: 4px;
+    width: 90%;
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  95% 50% no-repeat ;
+    padding: 3px;
+   
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+    width: 30%;
+  }
+  [type="date"]{
+   border: 1px solid black;
+  }
+  [type="radio"] {
+   
+    border: 0px;
+    width: 3%;
+    height: 1.5em;
+    margin-top: -1px;
+   
+  }
+  [type="checkbox"] {
+   
+    border: 0px;
+    width: 3%;
+    height: 1.5em;
+    margin-top: -1px;
+   
+  }
+
+  
+  /* custom styles */
+
+  #this label {
+    display: block;
+  }
+  #btn{
+    padding: 20px 35px 20px 35px; 
+    background-color: 
+    #0071c2;
+    color: white;
+  }
+  #this input[type="text"]{
+    width: 38%;
+  }
+  #chk{
+    display: flex;
+    margin-top: 20px;
+  }
+  #mdl{
+    width: 85%;
+    height: 60px;
+    margin: auto;
+    
+  }
+  #on{
+padding: 13px 20px 13px 20px;
+background-color: aliceblue;
+margin-top: 20px;
+border: none;
+  }
+  #to{
+    padding: 13px 20px 13px 20px;
+    background-color: aliceblue;
+    border: none;
+  }
+  #to:hover{
+    background-color: whitesmoke;
+    color: #003580;
+    border-bottom: 1px solid blue
+}
+#on:hover{
+    background-color: whitesmoke;
+    color: #003580;
+    border-bottom: 1px solid blue
+}
+  #nums{
+    width: 85%;
+    height: 60px;
+    margin-top: 20px;
+    margin: auto;
+  margin-bottom: 10px;
+  }
+  #hotels div {
+    width: 300px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    display: flex;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#hotels img {
+  width: 100%; /* Make images fill the div */
+  height: 100%;
+  object-fit: cover; /* Crop images to fit */
+}
+  #hotels{
+    justify-content: center;
+   display: flex;
+   margin-left: 150px;
+   margin-right: 150px;
+    width: auto;
+    height: auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+  }
+   #this img{
+    width: 93%;
+  }
+  #change{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin-bottom: 100px;
+    display: flex;
+  }
+  #trending > #account1{
+    width: 100%;
+    background-color: red;
+  }
+  #trending{
+    width: 85%;
+    height: 430px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: auto;
+  }
+  #trending{
+    margin-top: 50px;
+  }
+  #reduce{
+    width: 85%;
+    height:200px;
+    margin: auto;
+    
+    display: flex;
+  }
+  #reduce>div{
+    height: 100px;
+    width: 22%;
+    
+    margin: auto;
+  }
+  #mults{
+    width: 85%;
+    height: 60px;
+    margin-top: 20px;
+    margin: auto;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  }
+  #motels{
+   
+    width: 85%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: auto;
+  }
+  .part{
+    display: flex;
+  }
+  .part>div>img{
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 3px;
+  }
+  .part>div>h3{
+    margin-bottom: -10px;
+  }
+  .btn{
+    padding: 13px 20px 13px 20px;
+    background-color: aliceblue;
+    border: none;
+  }
+  .btn:hover{
+    background-color: whitesmoke;
+    color: #003580;
+    border-bottom: 1px solid blue
+}
+#ftr{
+   width: 85%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin: auto;
+}
+#unnder{
+ border-radius: 4px;
+  width: 90%;
+  height:170px ;
+  padding: 10px;
+  margin:auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#footer{
+  margin-top: 50px;
+  width: 100%;
+  height: 60px;
+  background-color: 
+  #003580;
+
+}
+#andar{
+  padding-top: 20px;
+  height: 60px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+#this a{
+  color: white;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+ 
+}
+#finalfooter{
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  
+
+ 
+}
+#first{
+
+  width: 50%;
+  height: 70px;
+  
+  margin: auto;
+}
+#second{
+  width: 85%;
+  height: 120px;
+  
+  margin: auto;
+  display: flex;
+}
+#first>p{
+  text-align: center;
+}
+#second>div{
+  width: 22%;
+  height: 40px;
+  
+  margin: auto;
+}
+#second>div>img{
+  width: 47%;
+
+}
