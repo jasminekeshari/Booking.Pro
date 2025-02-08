@@ -58,7 +58,7 @@ nav {
 }
 
 .nav__logo {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -68,6 +68,14 @@ nav {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+.nav__links a {
+  color: black;
+}
+
+.nav__links a:hover {
+  border-bottom :5px solid #017479;
+  border-radius: 3px;
 }
 
 .link a {
@@ -87,11 +95,12 @@ nav {
 .header_image_container {
   position: relative;
   min-height: 500px;
+  background-color: #017479;
   background-image: linear-gradient(
-      to right,
-      rgba(44, 56, 85, 0.9),
-      rgba(100, 125, 187, 0.1)
-    ),
+    to right,
+    rgba(2, 82, 89, 0.9),
+    rgba(255, 255, 255, 0)
+  ),
     url("assets/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -187,14 +196,14 @@ nav {
   border: none;
   font-size: 1.5rem;
   color: var(--white);
-  background-color: var(--primary-color);
+  background-color: #00605f;
   border-radius: 100%;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .booking__container .btn:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #017479;
 }
 
 .popular__grid {
@@ -290,14 +299,14 @@ nav {
   border: none;
   font-size: 1rem;
   color: var(--white);
-  background-color: var(--primary-color);
+  background-color: #00605f;
   border-radius: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .reward__btn:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #017479;
 }
 
 
@@ -354,7 +363,7 @@ nav {
 
 /* Footer Styling */
 footer {
-  background: #67a8ac;
+  background: #017479;
   padding: 30px 20px;
   font-family: Arial, sans-serif;
 }
@@ -377,6 +386,7 @@ footer {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: black;
 }
 
 .footer-column ul {
@@ -390,7 +400,7 @@ footer {
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -400,10 +410,15 @@ footer {
 
 /* Footer Bottom Section */
 .footer-bottom {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto; */
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
-  color: #666;
+  color: #ffffff;
 }
 
 .currency {
@@ -437,13 +452,23 @@ footer {
 .brands {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+/* 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto; */
 }
 
 .brands img {
-  height: 20px;
-  opacity: 0.8;
+  width: auto;
+  height: auto;
+  /* opacity: 0.8; */
 }
 
 .brands img:hover {
