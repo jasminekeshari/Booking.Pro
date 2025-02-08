@@ -27,7 +27,7 @@
           <input type="text" placeholder="Search" />
           <span><i class="ri-search-line"></i></span>
         </div>
-        <div class="login">
+        <div class="login" id="loginBtn">
           <span><i class="ri-user-3-fill"></i></span>
           Log In
         </div>
@@ -49,7 +49,8 @@
             Unlock exclusive deals and discounts to make your trip unforgettable.
             Get Started now and turn your travel dreams into reality!"
           </p>
-          <button id="sign-in-btn" class="btn">GET STARTED</button>
+          <button id="sign-in-btn" class="btn"> GET STARTED</button>
+    
         </div>
         <div class="destination__grid">
           <div class="destination__card">
@@ -102,5 +103,20 @@
         </div>
       </div>
     </div>
+
+
+    <!-- ----------modified-start------- -->
+    <script>document.getElementById("sign-in-btn").addEventListener("click", function () {
+      window.location.href = "login.html"; // Get Started Button Redirects to the login page
+    });
+
+    document.getElementById("loginBtn").addEventListener("click", function () {
+  window.location.href = "login.html"; // Login Button Redirects to login page
+});
+
+
+    </script>
+
+    <!-- ----------modified-end------- -->
   </body>
 </html>
