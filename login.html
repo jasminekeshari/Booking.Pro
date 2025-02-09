@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, 
-                         initial-scale=1.0">
-    <title>BOOKING.COM</title>
-    <link rel="stylesheet" 
-          href="styles/login.css">
-          <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKING.PRO - Authentication</title>
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
     <header>
-        <div style="background-color: #00605e; color:#fff; border-radius: 10px;">
+      <div style="background-color: #00605e; color: #fff; border-radius: 10px">
         <h1 class="heading">BOOKING.PRO</h1>
-        </div>
-        <h3 class="title">Registration Form</h3>
+      </div>
+      <h3 class="title">Registration Form</h3>
     </header>
 
-    <!-- container div -->
     <div class="container">
+      <div class="slider"></div>
+      <div class="btn">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+      </div>
 
-        <!-- upper button section to select
-             the login or signup form -->
-        <div class="slider"></div>
-        <div class="btn">
-            <button class="login">Login</button>
-            <button class="signup">Signup</button>
+      <div class="form-section">
+        <!-- Login Form -->
+        <div class="login-box">
+          <input
+            type="email"
+            class="email ele"
+            placeholder="youremail@email.com"
+          />
+          <input type="password" class="password ele" placeholder="password" />
+          <button class="clkbtn login-btn">Login</button>
         </div>
 
-        <!-- Form section that contains the
-             login and the signup form -->
-        <div class="form-section">
-
-            <!-- login form -->
-            <div class="login-box">
-                <input type="email" style="margin-top: 2opx;"
-                       class="email ele" 
-                       placeholder="youremail@email.com">
-                <input type="password"
-                       class="password ele" 
-                       placeholder="password">
-                <button class="clkbtn">Login</button>
-            </div>
-
-            <!-- signup form -->
-            <div class="signup-box">
-                <input type="text" 
-                       class="name ele" style="margin-top: 20px;"
-                       placeholder="Enter your name">
-                <input type="email" 
-                       class="email ele" 
-                       placeholder="youremail@email.com">
-                <input type="password" 
-                       class="password ele" 
-                       placeholder="password">
-                <input type="password" 
-                       class="password ele" 
-                       placeholder="Confirm password">
-                <button class="clkbtn" style="margin-bottom: 20px;">Signup</button>
-            </div>
+        <!-- Signup Form -->
+        <div class="signup-box">
+          <input type="text" class="name ele" placeholder="Enter your name" />
+          <input
+            type="email"
+            class="email ele"
+            placeholder="youremail@email.com"
+          />
+          <input type="password" class="password ele" placeholder="password" />
+          <input
+            type="password"
+            class="confirm-password ele"
+            placeholder="Confirm password"
+          />
+          <button class="clkbtn signup-btn">Signup</button>
         </div>
+      </div>
     </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+    <!-- Separate scripts -->
     <script src="scripts/login.js"></script>
-</body>
+    <script src="scripts/signup.js"></script>
+  </body>
 </html>

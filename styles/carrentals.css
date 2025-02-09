@@ -195,14 +195,14 @@ input[type="radio"] {
     border-top-left-radius: 5px;
     
 }
-#searchdiv #search {
-    width: 80%;
+#searchdiv #searchbtn {
+    width: 100%;
+    height: auto;
     align-items: center;
-    text-align: center left;
-    padding-left: 25%;
-    background-color: darkslategrey;
-    color: darkred;
-    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     font-weight: 600;
