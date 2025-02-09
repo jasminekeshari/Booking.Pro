@@ -33,7 +33,7 @@ Netlify :- https://bookingpro.netlify.app/
 ## 🚀 **Getting Started**
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/athu2773/booking.pro.git
-cd booking.pro
+git clone https://github.com/jasminekeshari/Web_205_web_warriors.git
+cd Web_205_web_warriors.git
 
 
