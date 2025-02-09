@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/booking.css" />
+    <link rel="stylesheet" href="./styles/booking.css" />
     <title>Hotel Booking</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
@@ -24,16 +24,31 @@
   </head>
   <body>
     <div class="container">
-      <nav>
-        <div class="nav__logo">BOOKING.PRO</div>
-        <ul class="nav__links">
-          <li><a href="#"><i class="fas fa-plane"></i> Hotels</a></li>
-          <li><a href="#"><i class="fas fa-bed"></i>  Flights</a></li>
-          <li><a href="#"><i class="fas fa-car"></i> Car Rentals</a></li>
-          <li><a href="#"><i class="fas fa-umbrella-beach"></i> Packages</a></li>
-          <li><a href="#"><i class="fas fa-tags"></i> Deals</a></li>
 
-        </ul>
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <div class="nav__logo">BOOKING.PRO</div>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div class="nav-mobile-container">
+          <div class="nav-center">
+            <button class="nav-btn" id="hotels">🏨 Hotels</button>
+            <button class="nav-btn active" id="flights">✈️ Flights</button>
+            <button class="nav-btn" id="car-hire">🚗 Car hire</button>
+          </div>
+
+          <div class="nav-auth">
+            <button class="auth-btn login">Login</button>
+            <button class="auth-btn signup">Sign up</button>
+          </div>
+        </div>
       </nav>
 
       <header class="section_container header_container">
@@ -146,7 +161,9 @@
 
       <section class="client">
         <div class="section_container client_container">
-          <h2 class="section__header" style="margin-top:60px; ">What our client say</h2>
+          <h2 class="section__header" style="margin-top: 60px">
+            What our client say
+          </h2>
           <div class="client__grid">
             <div class="client__card">
               <img src="assets/client-1.jpg" alt="client" />
@@ -183,8 +200,6 @@
         </div>
       </section>
     </div>
-
-    
 
     <!-- ----- Footer Section ----- -->
     <footer>
@@ -286,5 +301,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/booking.js"></script>
   </body>
 </html>
