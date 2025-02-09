@@ -3,7 +3,8 @@
 
 Booking.Pro is a **modern travel and booking platform** that allows users to explore dream destinations, book hotels, flights, car rentals, and more!  
 
-🚀 **Live Preview**: [Coming Soon](#)  
+🚀 **Live Preview**: https://drive.google.com/file/d/13OZj7R7hS3u-2wlI9W9MdFItQZ7SNrOk/view?usp=sharing
+  
 
 
 ## Deployed Link:-
