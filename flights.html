@@ -23,15 +23,17 @@
 
         <!-- Mobile Menu Container -->
         <div class="nav-mobile-container">
-          <div class="nav-center">
-            <button class="nav-btn active" id="flights">✈️ Flights</button>
-            <button class="nav-btn" id="hotels">🏨 Hotels</button>
-            <button class="nav-btn" id="car-hire">🚗 Car hire</button>
+          <div class="nav-center" style="display: flex; justify-content: flex-end; gap:-20px;" >
+            <button class="nav-btn active" id="flights"  onclick="redirectTo('flight.html')">✈️ Flights</button>
+            <button class="nav-btn" id="hotels" onclick="redirectTo('booking.html')">🏨 Hotels</button>
+            <button class="nav-btn" id="car-hire"  onclick="redirectTo('carrental.html')">🚗 Car hire</button>            
           </div>
+          <!-- <div class="login" id="userSection">
+            <span id="userName"><i class="ri-user-3-fill" style="border-radius: 0%;"></i> Log In</span>
+        </div> -->
 
           <div class="nav-auth">
-            <button class="auth-btn login">Login</button>
-            <button class="auth-btn signup">Sign up</button>
+            <button class="auth-btn logout">Logout  </button>
           </div>
         </div>
       </nav>
@@ -303,6 +305,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script/flight.js"></script>
 </body>
 
 </html>
