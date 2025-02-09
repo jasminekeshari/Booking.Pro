@@ -22,10 +22,11 @@
             <div class="search">
                 <input type="text" placeholder="Search">
                 <span><i class="ri-search-line"></i></span>
-            </div> -->
+            </div> 
             <div class="login" id="userSection">
                 <span id="userName"><i class="ri-user-3-fill" style="border-radius: 0%;"></i> Log In</span>
             </div>
+            -->
         </nav>
 
         <div class="destination__container">
@@ -94,26 +95,26 @@
             window.location.href = "login.html"; 
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-            let user = localStorage.getItem("user");
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     let user = localStorage.getItem("user");
 
-            if (user) {
-                user = JSON.parse(user);
-                document.getElementById("userName").innerHTML = `<i class="ri-user-3-fill"></i> ${user.name}`;
+        //     if (user) {
+        //         user = JSON.parse(user);
+        //         document.getElementById("userName").innerHTML = `<i class="ri-user-3-fill"></i> ${user.name}`;
                 
-                document.getElementById("userSection").addEventListener("click", function () {
-                    let logoutConfirm = confirm("Do you want to log out?");
-                    if (logoutConfirm) {
-                        localStorage.removeItem("user");
-                        window.location.reload();
-                    }
-                });
-            } else {
-                document.getElementById("userSection").addEventListener("click", function () {
-                    window.location.href = "login.html";
-                });
-            }
-        });
+        //         document.getElementById("userSection").addEventListener("click", function () {
+        //             let logoutConfirm = confirm("Do you want to log out?");
+        //             if (logoutConfirm) {
+        //                 localStorage.removeItem("user");
+        //                 window.location.reload();
+        //             }
+        //         });
+        //     } else {
+        //         document.getElementById("userSection").addEventListener("click", function () {
+        //             window.location.href = "login.html";
+        //         });
+        //     }
+        // });
     </script>
 
 </body>

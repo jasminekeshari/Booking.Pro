@@ -72,7 +72,7 @@ loginBtn.addEventListener("click", async (event) => {
 
     alert("✅ Login successful! Redirecting...");
     clearFields();
-    window.location.href = "index.html"; // Redirect after login
+    window.location.href = "booking.html"; // Redirect after login
 });
 
 // Handle signup

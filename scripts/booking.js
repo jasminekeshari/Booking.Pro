@@ -55,3 +55,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const logoutBtn = document.querySelector(".auth-btn.logout");
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", function () {
+      // Clear authentication data (if stored in localStorage)
+      localStorage.removeItem("authUser");
+
+      // Redirect to index.html
+      window.location.href = "index.html";
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let user = localStorage.getItem("user");
+
+  if (user) {
+      user = JSON.parse(user);
+      document.getElementById("userName").innerHTML = `<i class="ri-user-3-fill"></i> ${user.name}`;
+      
+      document.getElementById("userSection").addEventListener("click", function () {
+          let logoutConfirm = confirm("Do you want to log out?");
+          if (logoutConfirm) {
+              localStorage.removeItem("user");
+              window.location.reload();
+          }
+      });
+  } else {
+      document.getElementById("userSection").addEventListener("click", function () {
+          window.location.href = "login.html";
+      });
+  }});
