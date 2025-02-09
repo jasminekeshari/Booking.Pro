@@ -342,6 +342,9 @@ input[type="radio"] {
     width: 77%;
     margin: auto;
     margin-top: 70px;
+    margin-left: 60px;
+    font-weight:bold ;
+    font-size: xx-large;
 }
 .car9 {
     color: red;
@@ -419,17 +422,18 @@ input[type="radio"] {
   }
 
 .ftr{
-    border: 2px solid #00605f;
+    /* border: 2px solid #00605f; */
     border-radius: 10px;
     width: 85%;
-   height: 800px;
+   height: 400px;
    display: grid;
-   line-height:80px;
-   gap: 1rem;
-   /* grid-template-columns: repeat(3,1fr); */
+   grid-template-columns: repeat(3,1fr);
    margin: auto;
+   margin-bottom: 40px;
+   margin-left: 30px;
  }
  #unnder{
+  border: 1px solid #00605f;
   border-radius: 4px;
    width: 90%;
    height:170px ;
