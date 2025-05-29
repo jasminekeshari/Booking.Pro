@@ -26,7 +26,7 @@ Netlify :- https://bookingpro.netlify.app/
 - **Frontend**: HTML, CSS, JavaScript  
 - **Icons**: Remix Icons  
 - **Database**: Firebase Realtime Database  
-- **Hosting**: (To be added)  
+- **Hosting**: bookingpro.netlify.app/
 
 ---
 
